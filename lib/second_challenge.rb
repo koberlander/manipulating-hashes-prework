@@ -6,7 +6,9 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  #return a list of all of the values
+  #used .values to retrieve the key values and flatten to compress the layers (like in ps or Power Point)
+  
 (groceries.values).flatten(3)
   
 
