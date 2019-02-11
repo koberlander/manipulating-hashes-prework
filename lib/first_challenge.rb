@@ -1,4 +1,7 @@
+require 'pry'
 def first_challenge
+# remove strawberry from Freddy Mercury's favorite_icecream_flavors  
+  
   contacts = {
     "Jon Snow" => {
       name: "Jon",
@@ -12,11 +15,12 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
+  
 
-  #your code here
-
-
-  #remember to return your newly altered contacts hash!
-  contacts
-end
-
+#implement .delete_if to find :favorite_icecream_flavors with value "strawberry"
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if  do | key | 
+    key == "strawberry" 
+    end 
+#return the newly-altered contacts hash
+contacts
+end 
